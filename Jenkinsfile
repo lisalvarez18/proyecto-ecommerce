@@ -21,7 +21,6 @@ pipeline {
         }
         stage('Deliver') { 
             steps {
-                sh 'npm build'
                 sh 'node app.js'
                 input message: 'Finished using the web site? (Click "Proceed" to continue)'
                 sh 'kill -INT 888'
