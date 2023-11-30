@@ -5,8 +5,10 @@ branches:
 only:
   - main
 before_script:
+  - echo 'Installing depedencies'
   - npm install
 script:
+- echo 'Running tests'
   - npm test
 notifications:
   email:
