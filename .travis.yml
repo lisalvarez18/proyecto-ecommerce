@@ -1,0 +1,14 @@
+language: node_js
+node_js:
+  - "20.9.0"
+branches:
+only:
+  - main
+before_script:
+  - npm install
+script:
+  - npm test
+notifications:
+  email:
+  on_failure: lisalvarez398@gmail.com
+  on_success: lisalvarez398@gmail.com
